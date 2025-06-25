@@ -1,6 +1,10 @@
 # compilador-por-conteudo
 A partir de nome de tabelas ou de programas, busca fontes e os compila, tendo como um retorno um csv com os arquivos e o resultado da compilação.
 
-##IMPORTANTE
-é necessário descompactar op arquivo rg.exe e coloca-lo no propath para ser encontrado diretamente ou altera o fonte que chama este programa via search
-para encontrar na pasta onde o mesmo for colocado.
+## Programa Principal
+O Programa compilacaoPorBuscaDeArquivoProgresssPuro.w é o programa principal pelo qual pode-se executar a funcionalidade de busca e verificar a relação
+dos demais programas funcionando.
+### IMPORTANTE Coloque os programas no propath para chamada direta ou altera os fontes chamadores para encontrar na pasta onde o mesmo for colocado.
+
+
+
