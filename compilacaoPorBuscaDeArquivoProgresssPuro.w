@@ -116,7 +116,7 @@ DEFINE FRAME F-Main
      fiExtensoes AT ROW 4.5 COL 18.29 COLON-ALIGNED WIDGET-ID 12
      edDiretorios AT ROW 6.17 COL 20.14 NO-LABEL WIDGET-ID 8
      btExecutar AT ROW 9.5 COL 2 WIDGET-ID 14
-     "Diret¢rios" VIEW-AS TEXT
+     "DiretÂ¢rios" VIEW-AS TEXT
           SIZE 8 BY .54 AT ROW 5.5 COL 20.43 WIDGET-ID 10
      RECT-1 AT ROW 2.75 COL 1.57 WIDGET-ID 2
     WITH 1 DOWN NO-BOX KEEP-TAB-ORDER OVERLAY 
@@ -141,7 +141,7 @@ DEFINE FRAME F-Main
 IF SESSION:DISPLAY-TYPE = "GUI":U THEN
   CREATE WINDOW W-Win ASSIGN
          HIDDEN             = YES
-         TITLE              = "Compilar Fontes Com Filtro por Conte£do"
+         TITLE              = "Compilar Fontes Com Filtro por ConteÂ£do"
          HEIGHT             = 10.17
          WIDTH              = 101.72
          MAX-HEIGHT         = 47.38
@@ -192,7 +192,7 @@ THEN W-Win:HIDDEN = yes.
 
 &Scoped-define SELF-NAME W-Win
 &ANALYZE-SUSPEND _UIB-CODE-BLOCK _CONTROL W-Win W-Win
-ON END-ERROR OF W-Win /* Compilar Fontes Com Filtro por Conte£do */
+ON END-ERROR OF W-Win /* Compilar Fontes Com Filtro por ConteÂ£do */
 OR ENDKEY OF {&WINDOW-NAME} ANYWHERE DO:
   /* This case occurs when the user presses the "Esc" key.
      In a persistently run window, just ignore this.  If we did not, the
@@ -205,7 +205,7 @@ END.
 
 
 &ANALYZE-SUSPEND _UIB-CODE-BLOCK _CONTROL W-Win W-Win
-ON WINDOW-CLOSE OF W-Win /* Compilar Fontes Com Filtro por Conte£do */
+ON WINDOW-CLOSE OF W-Win /* Compilar Fontes Com Filtro por ConteÂ£do */
 DO:
   /* This ADM code must be left here in order for the SmartWindow
      and its descendents to terminate properly on exit. */
@@ -226,7 +226,7 @@ DO:
   RUN buscarArquivos.
   ASSIGN btExecutar:LABEL = "Compilando".
   RUN compilarArquivos.
-  {esp/exportarTabelaCsv3.i ttArquivos " " " " "ArquivosCompilados"}
+  {exportarTabelaCsv3.i ttArquivos " " " " "ArquivosCompilados"}
   ASSIGN btExecutar:SENSITIVE = YES. 
   ASSIGN btExecutar:LABEL = "Compilar".
   
